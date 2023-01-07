@@ -31,7 +31,7 @@ def play_game(num_episodes):
 def calc_rewards(rewards, num_episodes):
     time_now = datetime.now().strftime("%H:%M:%S")
     date_now = date.today()
-    filename = str(date_now) + \
+    filename = "results/" + str(date_now) + \
         "-Keyboard-Agent-" + str(num_episodes) + \
         "-Episodes-" + str(time_now) + ".csv"
     print(filename)
