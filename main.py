@@ -34,10 +34,14 @@ def calc_rewards(rewards, num_episodes):
     filename = "results/" + str(date_now) + \
         "-Keyboard-Agent-" + str(num_episodes) + \
         "-Episodes-" + str(time_now) + ".csv"
-    print(filename)
-    file = open(filename, "w")
+
+    timesteps = []
     for each in rewards:
-        file.write(str(sum(each)))
+        timesteps.append(len(each))
+
+    file = open(filename, "w")
+    for i in range(len(rewards)):
+        file.write((str(sum(rewards[i])) + "," + str(timesteps[i])))
         file.write("\n")
     file.close()
 
