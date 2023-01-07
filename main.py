@@ -4,7 +4,7 @@ from gymnasium.utils.play import play, PlayPlot
 
 from datetime import datetime, date
 
-num_episodes = 11
+num_episodes = 15
 ep = 0
 env = gym.make("LunarLander-v2", render_mode="rgb_array")
 
