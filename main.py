@@ -4,7 +4,7 @@ from gymnasium.utils.play import play, PlayPlot
 
 from datetime import datetime, date
 
-num_episodes = 3
+num_episodes = 1000
 env = gym.make("LunarLander-v2", render_mode="rgb_array")
 
 ep_rew = []
