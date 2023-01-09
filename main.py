@@ -4,8 +4,8 @@ from gymnasium.utils.play import play, PlayPlot
 import os
 from datetime import datetime, date
 
-num_of_episodes = 10   # Number of episodes to be played
-nth = 1              # Save every nth episode
+num_of_episodes = 15   # Number of episodes to be played
+nth = 4                # Save every nth episode
 ep = 0                 # Current episode
 episodes_to_save = list(range(num_of_episodes+1))
 episodes_to_save = episodes_to_save[1::nth]
